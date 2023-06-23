@@ -10,7 +10,7 @@
 
 ## Overview
 
-#### This includes various C projects from the lab section of COEN 146: Computer Networks.
+#### This repository includes various C projects from the lab section of COEN 146: Computer Networks.
 
 ## Lab 1 - Basic Linux & C
 
