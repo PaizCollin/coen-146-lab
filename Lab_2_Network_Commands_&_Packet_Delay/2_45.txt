@@ -1,0 +1,97 @@
+STEP 4
+
+a. When you type "telnet gaia.cs.umass.ecu 80" into the terminal, it responds:
+    ":Trying 128.119.245.12...
+    Connected to gaia.cs.umass.edu."
+
+b. After the GET HTTP request, I got a 200 OK request code and it displayed some information about the server and wrote the HTML file to the terminal.
+
+c. The file it attempted to receive was index.php. The client is running HTTP 1.1.  Received conent type: html, JS, jpg.
+
+
+
+STEP 5
+
+1)
+telnet scu.edu 80
+Trying 34.107.151.86...
+Connected to scu.edu.
+Escape character is '^]'.
+GET /index.html HTTP/1.1
+HOST: scu.edu
+HTTP/1.1 301 Moved Permanently
+Date: Fri, 14 Jan 2022 23:17:15 GMT
+Server: Apache
+Content-Security-Policy: frame-ancestors 'self' t4.scu.edu cms.scu.edu cms01.scu.edu thetrustproject.org media.scu.edu ecampus.scu.edu hrdev.scu.edu hrusr.scu.edu t4dev.scu.edu 166.78.46.137 campaign.scu.edu vanillasoft.net 129.210.247.132
+Location: https://www.scu.edu/index.html
+Content-Length: 238
+Content-Type: text/html; charset=iso-8859-1
+Via: 1.1 google
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="https://www.scu.edu/index.html">here</a>.</p>
+</body></html>
+
+The index page has been moved Permanently
+
+
+2)
+telnet scu.edu 3389
+Trying 34.107.151.86...
+Connected to scu.edu.
+Escape character is '^]'.
+Connection closed by foreign host.
+
+immediate closed connection
+
+
+3)
+telnet ox.ac.uk 80
+Trying 151.101.66.216...
+Connected to ox.ac.uk.
+Escape character is '^]'.
+GET /index.html HTTP/1.1
+HOST: ox.ac.uk
+HTTP/1.1 301 Moved Permanently
+Server: Varnish
+Retry-After: 0
+Location: https://ox.ac.uk/index.html
+Content-Length: 0
+Accept-Ranges: bytes
+Date: Fri, 14 Jan 2022 23:08:13 GMT
+Via: 1.1 varnish
+Connection: close
+X-Served-By: cache-pao17447-PAO
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1642201694.796474,VS0,VE1
+Strict-Transport-Security: max-age=300
+Connection closed by foreign host.
+
+index.html was moved Permanently
+
+
+4)
+telnet ox.ac.uk 3389
+Trying 151.101.2.216...
+
+this sat idle for a long time and never connected
+
+
+5)
+telnet toyo.ac.jp 80
+Trying 133.79.5.1...
+telnet: connect to address 133.79.5.1: No route to host
+
+Connection failed
+
+
+6)
+telnet toyo.ac.jp 3389
+Trying 133.79.5.1...
+telnet: connect to address 133.79.5.1: No route to host
+
+Connection failed

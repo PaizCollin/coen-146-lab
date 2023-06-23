@@ -1,0 +1,22 @@
+--- scu.edu ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9081ms
+rtt min/avg/max/mdev = 4.679/4.794/5.082/0.121 ms
+
+Packet Loss: 0%
+RTT (Avg): 4.794 ms
+
+--- ox.ac.uk ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9013ms
+rtt min/avg/max/mdev = 7.710/7.841/8.172/0.175 ms
+
+Packet Loss: 0%
+RTT (Avg): 7.841 ms
+
+--- toyo.ac.jp ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9005ms
+rtt min/avg/max/mdev = 118.019/118.152/118.356/0.356 ms
+
+Packet Loss: 0%
+RTT (Avg): 118.152 ms
+
+The further away the location geographically, the higher the RTT gets. It did not seem to scale linearly, which may be a result of the host itself. 
